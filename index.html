@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="images/financial_data.png" alt="" srcset="">
+        </div>
+        <div class="rightside">
+
+            <h1>Crie sua conta</h1>
+            <form method="post" class="validator">
+                <label>
+                    Seu nome:<br />
+                    <input type="text" name="name" placeholder="Nome" data-rules="required|min=2">
+                </label>
+                <label>
+                    Seu Email:<br />
+                    <input type="text" name="email" placeholder="Email" data-rules="required|email">
+                </label>
+                <label>
+                    Sua Senha:<br />
+                    <input type="password" name="password" placeholder="Senha" data-rules="required|min=4">
+                </label>
+                <label>
+                    Seu Email:<br />
+                    <input type="submit" value="Cadastrar" data-rules="required|email">
+                </label>
+            </form>
+            <div>
+                Já tem uma conta? <a href="">Faça Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
